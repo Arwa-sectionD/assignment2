@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+  /* Setting the font family for the entire document */
+  font-family: 'Arial', sans-serif;
+  /* Setting the default text color */
+  color: #333;
+  /* Setting a background image for the body */
+  background-image: url(https://i.pinimg.com/originals/bb/e5/76/bbe576326b4defbe9e0d724286f872ea.gif);
+  /* Making the background image cover the entire background */
+  background-size: cover;
+  /* Setting a fallback background color */
+  background-color: #f9f9f9;
+  /* Removing default margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation Bar */
+header {
+  /* Setting the background color of the header to white */
+  background-color: #fff;
+  /* Adding padding to the header */
+  padding: 20px;
+  /* Adding a box shadow to the header for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  /* Setting the text color of navigation links */
+  color: #333;
+  /* Removing underline from links */
+  text-decoration: none;
+  /* Adding padding to each link */
+  padding: 10px;
+  /* Adding a transition effect for the color change on hover */
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  /* Changing the text color on hover */
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  /* Setting a background image for the hero section */
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  /* Centering the text */
+  text-align: center;
+  /* Adding padding to the hero section */
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  /* Increasing the font size of the main heading */
+  font-size: 4em;
+  /* Changing the text color to black */
+  color: #000;
+  /* Removing default margin */
+  margin: 0;
+  /* Adding a fade-in animation */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  /* Increasing the font size of the paragraph */
+  font-size: 2em;
+  /* Changing the text color to black */
+  color: #000;
+  /* Adding margin to the paragraph */
+  margin: 20px 0;
+  /* Adding a fade-in animation with delay */
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero button {
+  /* Setting the background color of the button */
+  background-color: #007bff;
+  /* Setting the text color of the button */
+  color: #fff;
+  /* Removing border */
+  border: none;
+  /* Adding padding to the button */
+  padding: 15px 30px;
+  /* Changing the cursor to pointer */
+  cursor: pointer;
+  /* Setting the font size of the button */
+  font-size: 1em;
+  /* Adding a transition effect for the background color change on hover */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero button:hover {
+  /* Changing the background color on hover */
+  background-color: #0056b3;
+}
+
+/* About Us Section */
+.about {
+  /* Using flexbox to center the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adding padding to the section */
+  padding: 50px 20px;
+  /* Centering the text */
+  text-align: center;
+}
+
+.about img {
+  /* Making the image responsive */
+  max-width: 100%;
+  /* Adding a slide-in animation */
+  animation: slideIn 1s ease-in-out;
+}
+
+.about .text {
+  /* Setting a maximum width for the text */
+  max-width: 600px;
+  /* Adding a slide-in animation */
+  animation: slideIn 1s ease-in-out;
+}
+
+.about h2 {
+  /* Increasing the font size of the heading */
+  font-size: 2em;
+}
+
+.about p {
+  /* Increasing the font size of the paragraph */
+  font-size: 1.2em;
+}
+
+/* Available Pets Section */
+.adopt {
+  /* Using flexbox to center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adding padding to the section */
+  padding: 50px 20px;
+}
+
+.adopt h2 {
+  /* Centering the text */
+  text-align: center;
+  /* Increasing the font size of the heading */
+  font-size: 2em;
+}
+
+.pets-container {
+  /* Using grid layout for the pets container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Adding gap between grid items */
+  gap: 20px;
+  /* Setting the maximum width of the container */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pet {
+  /* Setting the background color of the pet card */
+  background-color: #fff;
+  /* Adding padding to the pet card */
+  padding: 20px;
+  /* Adding a box shadow to the pet card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Adding transition effects for hover state */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pet:hover {
+  /* Scaling the pet card on hover */
+  transform: scale(1.05);
+  /* Increasing the box shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pet img {
+  /* Making the image responsive */
+  max-width: 100%;
+}
+
+.pet h3 {
+  /* Increasing the font size of the pet name */
+  font-size: 1.5em;
+}
+
+.pet p {
+  /* Increasing the font size of the pet description */
+  font-size: 1.2em;
+}
+
+/* Pet Care Section */
+.pet-care {
+  /* Using flexbox to center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adding padding to the section */
+  padding: 50px 20px;
+  /* Centering the text */
+  text-align: center;
+}
+
+.pet-care h2 {
+  /* Increasing the font size of the heading */
+  font-size: 3em;
+  /* Changing the text color to black */
+  color: #000;
+}
+
+.pet-care article {
+  /* Adding margin to the bottom of the article */
+  margin-bottom: 20px;
+  /* Setting a maximum width for the article */
+  max-width: 600px;
+}
+
+.pet-care h3 {
+  /* Increasing the font size of the subheading */
+  font-size: 2em;
+  /* Changing the text color to black */
+  color: #000;
+}
+
+.pet-care p {
+  /* Increasing the font size of the paragraph */
+  font-size: 1.5em;
+  /* Changing the text color to black */
+  color: #000;
+}
+
+/* Contact Section */
+.contact {
+  /* Using flexbox to center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adding padding to the section */
+  padding: 50px 20px;
+  /* Centering the text */
+  text-align: center;
+}
+
+.contact h2 {
+  /* Increasing the font size of the heading */
+  font-size: 2em;
+}
+
+.contact form {
+  /* Using flexbox for the form layout */
+  display: flex;
+  flex-direction: column;
+  /* Adding gap between form elements */
+  gap: 10px;
+  /* Setting the maximum width of the form */
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact form input,
+.contact form textarea {
+  /* Adding padding to form inputs */
+  padding: 10px;
+  /* Adding border to form inputs */
+  border: 1px solid #ccc;
+  /* Adding border-radius to form inputs */
+  border-radius: 5px;
+  /* Increasing the font size of form inputs */
+  font-size: 1.2em;
+}
+
+.contact form button {
+  /* Setting the background color of the button */
+  background-color: #007bff;
+  /* Setting the text color of the button */
+  color: #fff;
+  /* Removing border */
+  border: none;
+  /* Adding padding to the button */
+  padding: 15px 30px;
+  /* Changing the cursor to pointer */
+  cursor: pointer;
+  /* Increasing the font size of the button */
+  font-size: 1.2em;
+  /* Adding a transition effect for the background color change on hover */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact form button:hover {
+  /* Changing the background color on hover */
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  /* Setting the background color of the footer */
+  background-color: #fff;
+  /* Adding padding to the footer */
+  padding: 20px;
+  /* Centering the text */
+  text-align: center;
+  /* Adding a box shadow to the footer for depth */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  /* Removing default margin */
+  margin: 0;
+}
+
+.social-links a {
+  /* Setting the text color of social links */
+  color: #007bff;
+  /* Removing underline from links */
+  text-decoration: none;
+  /* Adding padding to each link */
+  padding: 10px;
+  /* Adding a transition effect for the color change on hover */
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  /* Changing the text color on hover */
+  color: #0056b3;
+}
+
+/* Animations */
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    /* Starting with 0 opacity */
+    opacity: 0;
+  }
+  to {
+    /* Ending with full opacity */
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    /* Starting with -50px translation and 0 opacity */
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    /* Ending with 0 translation and full opacity */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+/* Styles for screens with max width of 768px */
+@media (max-width: 768px) {
+  .about {
+    /* Changing flex direction to column for smaller screens */
+    flex-direction: column;
+    /* Centering text */
+    text-align: center;
+  }
+  .hero h1 {
+    /* Decreasing font size for smaller screens */
+    font-size: 2em;
+  }
+}
+
+/* Styles for screens with max width of 480px */
+@media (max-width: 480px) {
+  nav a {
+    /* Making nav links block elements and adjusting padding */
+    display: block;
+    padding: 5px;
+  }
+}
